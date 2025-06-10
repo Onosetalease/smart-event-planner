@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Future of Smart Event Planner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-blue-100 to-purple-200 min-h-screen flex items-center justify-center text-center font-sans">
+  <div class="bg-white p-8 rounded-2xl shadow-xl max-w-xl fade-in">
+    <h1 class="text-4xl font-bold text-blue-600 mb-2">The Future of Smart Event Planner</h1>
+    <h2 class="text-lg text-gray-600 italic mb-4">Praise Onosetalease Chris – Lead Cloud Engineer</h2>
+
+    <p class="mb-4 text-gray-800">
+      Smart Event Planner helps automate event logistics, guest tracking, and vendor coordination using modern cloud tools. It's built for efficiency and scale.
+    </p>
+
+    <button onclick="showMessage()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition">
+      Click Me
+    </button>
+
+    <p id="message" class="mt-4 text-green-600 font-medium hidden">🎉 You clicked the button!</p>
+
+    <p class="text-sm text-gray-500 mt-6">Powered by AWS, Nginx, Tailwind, and JavaScript</p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('message').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
