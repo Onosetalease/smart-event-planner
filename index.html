@@ -20,6 +20,8 @@
     <h1 class="text-4xl font-bold text-blue-600 mb-2">The Future of Smart Event Planner</h1>
     <h2 class="text-lg text-gray-600 italic mb-4">Praise Onosetalease Chris – Lead Cloud Engineer</h2>
 
+    <div id="clock" class="text-md text-blue-700 font-semibold mb-4"></div>
+
     <p class="mb-4 text-gray-800">
       Smart Event Planner helps automate event logistics, guest tracking, and vendor coordination using modern cloud tools. It's built for efficiency and scale.
     </p>
@@ -30,13 +32,45 @@
 
     <p id="message" class="mt-4 text-green-600 font-medium hidden">🎉 You clicked the button!</p>
 
+    <button onclick="openModal()" class="mt-4 bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-600 transition">
+      Contact Us
+    </button>
+
     <p class="text-sm text-gray-500 mt-6">Powered by AWS, Nginx, Tailwind, and JavaScript</p>
   </div>
 
+  <!-- Modal -->
+  <div id="contactModal" class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 hidden items-center justify-center z-50">
+    <div class="bg-white p-6 rounded-lg shadow-lg w-80 text-center">
+      <h3 class="text-xl font-bold mb-2">Contact Us</h3>
+      <p class="mb-4">Send us a message and we’ll get back to you!</p>
+      <button onclick="closeModal()" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition">Close</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
   <script>
+    // Show/hide message
     function showMessage() {
       document.getElementById('message').classList.remove('hidden');
     }
+
+    // Modal functionality
+    function openModal() {
+      document.getElementById('contactModal').classList.remove('hidden');
+    }
+
+    function closeModal() {
+      document.getElementById('contactModal').classList.add('hidden');
+    }
+
+    // Real-time clock
+    function updateClock() {
+      const now = new Date();
+      document.getElementById("clock").textContent = "⏰ " + now.toLocaleTimeString();
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
   </script>
 </body>
 </html>
