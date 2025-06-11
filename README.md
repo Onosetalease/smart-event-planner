@@ -47,7 +47,7 @@ Praise Onosetalease Chris is a passionate cloud and cybersecurity enthusiast cur
 ## 🌐 Live Demo
 
 Access the deployed site here:  
-[http://54.161.198.9](http://54.161.198.9)  
+[http://54.161.198.9](http://54.161.198.9)  3.84.251.182
 > *Hosted on AWS EC2 with Nginx and HTTPS*
 
 ---
