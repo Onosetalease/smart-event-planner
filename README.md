@@ -1,7 +1,8 @@
 # Smart Event Planner
 
-**Hosted at:** [http://34.238.51.99](http://34.238.51.99)
+Smart Event Planner is a cloud-based project designed to automate and simplify event management. It focuses on streamlining event logistics, tracking guests, and coordinating vendors, all while leveraging cloud infrastructure to ensure scalability and efficiency.
 
+HEAD
 ##  Project Title
 **The Future of Smart Event Planning**
 
@@ -47,8 +48,59 @@ To view the deployed landing page, visit:
 
 ##  Folder Contents
 
+## Technologies Used
 
+- **HTML5**: Structuring the content of the landing page
+- **Tailwind CSS**: Utility-first CSS for responsive and modern styling
+- **JavaScript**: For basic interactivity (e.g., button functionality)
+- **AWS EC2**: Hosting the application on a virtual server
+- **Nginx**: Web server to serve the static site
+- **Git & GitHub**: Version control and repository management
+
+## Project Deployment
+
+The application is hosted on an AWS EC2 instance and accessible via a public IP. Static content is served using Nginx from the `/var/www/html` directory.
+9eb21ad (Added professional bio and pitch)
+
+##  Project Structure
+
+```
 smart-event-planner/
-├── index.html         # Landing page
-├── README.md          # Project documentation
-└── screenshot.png     # Screenshot of the live page
+├── index.html          # Main landing page
+├── README.md           # Project documentation
+```
+
+## Getting Started
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Onosetalease/smart-event-planner.git
+   ```
+
+2. SSH into your AWS EC2 instance:
+   ```bash
+   ssh -i /path/to/your-key.pem ubuntu@your-ec2-ip
+   ```
+
+3. Upload your project files:
+   ```bash
+   scp -i /path/to/your-key.pem index.html ubuntu@your-ec2-ip:/var/www/html/
+   ```
+
+4. Visit the public IP in your browser to view the site.
+
+##  Developer Notes
+
+This project is part of a practical cloud deployment training focused on learning real-world deployment strategies using open-source tools and modern development practices.
+
+
+
+###  **About the Developer**
+
+Hi, I'm **Praise Onosetalease Chris**, a cybersecurity student with a keen interest in cloud technologies and digital innovation. With hands-on experience in web development and cloud deployment, I’m passionate about building efficient, secure, and scalable solutions that address real-world challenges. I specialize in tools like **AWS, Git, HTML, TailwindCSS, and JavaScript**, and I’m committed to leveraging technology to improve how we plan and execute events.
+
+---
+
+### **Professional Pitch**
+
+**Smart Event Planner** is a cloud-based solution designed to modernize and simplify event management. It automates key processes such as guest tracking, vendor coordination, and logistics, delivering efficiency and real-time control to event organizers. Built with a lightweight front end and deployed on **AWS using Nginx**, the platform blends user-friendly design with the power of scalable cloud infrastructure—ideal for professionals seeking smarter ways to manage events.
