@@ -20,7 +20,7 @@ Smart Event Planner is built for a future where event coordination is automated 
 
 ##  Professional Bio
 
-Praise Onosetalease Chris is a passionate cloud and cybersecurity enthusiast currently studying Cybersecurity at the university. As the lead engineer behind Smart Event Planner, he combines strong cloud deployment skills with a security-first mindset to deliver scalable and innovative web solutions.
+Praise Onosetalease Chris is a passionate cloud and cybersecurity enthusiast currently studying Cybersecurity at the university. As the lead engineer behind Smart Event Planner, she combines strong cloud deployment skills with a security-first mindset to deliver scalable and innovative web solutions.
 
 
 
